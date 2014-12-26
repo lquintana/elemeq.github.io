@@ -95,10 +95,11 @@
                         console.log(this.response, typeof this.response);
                         
                         var img = new Image();
-                        console.log('img', img)
                         // var img = document.getElementById('img');
                         var url = window.URL || window.webkitURL;
                         img.src = url.createObjectURL(this.response);
+                        img.width = '100%';
+                        img.height = '100%';
 
                         $('#myModal .modal-content').append(img);
                     }
