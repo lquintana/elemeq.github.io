@@ -1,4 +1,49 @@
 /**
- * MAIN CSS
  * Portada
  */
+
+.main-container.portada {
+	background-image: url('../images/portada.jpg');
+	font-family: "Optima";
+}
+
+.portada h2,
+.portada ul {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.portada h2 {
+	
+	margin-top: 3.8em;
+	
+	font-size: 48px;
+	opacity: .8;
+	color: #aaa;
+	text-shadow: 5px 5px 5px #000;
+}
+
+.portada ul {
+	left: 50%;
+	width: 70%;
+	margin-top: 11.5em;
+	margin-left: -35%;
+	font-size: 20px;
+	line-height: 28px;
+	color: #ad8a00;
+}
+
+.portada ul li {
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+	opacity: .8;
+}
+
+.portada ul li:not(:first-child):before {
+	content: '|';
+	position: absolute;
+	left: -15px;
+}
