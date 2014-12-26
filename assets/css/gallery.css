@@ -6,19 +6,39 @@
 	background: url('../images/gallery.jpg') center center no-repeat;
 }
 
+.main-container.location {
+	background: url('../images/maps.jpg') center center no-repeat;
+}
+
+.main-container.contact-form {
+	background: url('../images/contact.jpg') center center no-repeat;
+}
+
 .item-gallery {
 	text-align: center;
 	position: relative;
 }
 .item-gallery li {
+	position: relative;
 	width: 205px;
 	height: 205px;
-	background: #FFF;
 	display: inline-block;
+	vertical-align: top;
 
 	margin-right: 25px;
 	margin-bottom: 15px;
 	margin-top: 10px;
+	
+	background: #FFF;
+}
+
+.item-gallery img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	margin-left: -82.5px;
+	margin-top: -62.5px;
 }
 
 .item-gallery:after,
@@ -30,7 +50,7 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -20px;
-	background: #FFF;
+	/*background: #FFF;*/
 
 }
 
