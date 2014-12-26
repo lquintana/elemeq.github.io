@@ -5,6 +5,8 @@
 .main-container.portada {
 	background: url('../images/portada.jpg') center center no-repeat;
 	font-family: "optimamedium";
+	top: 0;
+	height: 100%;
 }
 
 .portada h2,

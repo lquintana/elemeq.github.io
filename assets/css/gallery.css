@@ -4,5 +4,8 @@
 
 .main-container.gallery {
 	background: url('../images/gallery.jpg') center center no-repeat;
-	font-family: "elsaregular";
+}
+
+.gallery {
+	
 }
