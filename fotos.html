@@ -87,7 +87,7 @@
 			$('[data-section="pictures"]').on('click','.item-gallery', function (event) {
 				$.ajax({
 					url:'assets/images/gallery/contact.jpg',
-					method: 'GET',
+					datatype:"image/jpg",
 					success: function(data){
 						console.log('data', data)
 					}
