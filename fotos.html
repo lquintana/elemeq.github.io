@@ -87,7 +87,7 @@
 			xhr.onreadystatechange = function(){
 			    if (this.readyState == 4 && this.status == 200){
 			        //this.response is what you're looking for
-			        handler(this.response);
+			        // handler(this.response);
 			        console.log(this.response, typeof this.response);
 			        var img = document.getElementById('img');
 			        var url = window.URL || window.webkitURL;
