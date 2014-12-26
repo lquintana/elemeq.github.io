@@ -1,32 +1,51 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Estancia Tierra Chaná</title>
-	<link rel="stylesheet" type="text/css" href="/assets/css/base.css">
-	<link rel="stylesheet" type="text/css" href="/assets/css/gallery.css">
+
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="assets/fonts/icons/fontello.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
 </head>
 <body>
-	<header>
-		<a href="">
-			<img src="" />
+	<header class="header">
+		<a href="/" class="logo">
+			<img src="assets/images/logo.jpg" alt="Tierra Chaná" />
 			<h1>Tierra Chaná</h1>
 		</a>
 		<nav>
 			<ul>
-				<li><a href=""><i class="icon-pictures" />Fotos y videos</a></li>
-				<li><a href=""><i class="icon-point" />Ubicación</a></li>
-				<li><a href=""><i class="icon-mail" />Contacto</a></li>
+				<li data-selected="true"><a href="/fotos.html"><i class="icon-picture"></i><span>Fotos y videos</span></a></li>
+				<li><a href=""><i class="icon-location"></i><span>Ubicación</span></a></li>
+				<li><a href=""><i class="icon-mail"></i><span>Contacto</span></a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<aside>
+		
+		<aside class="aside-menu">
 			<ul>
-				<li><a href="">Fotos</a></li>
+				<li data-selected="true"><a href="">Fotos</a></li>
 				<li><a href="">Videos</a></li>
 			</ul>
 		</aside>
-		<section>
+		
+		<section class="main-container gallery" data-section="pictures">
+			<h2><i class="icon-pictures">Galería de fotos</h2>
+			<ul class="pictures-gallery">
+				<li class="gallery-item"><img src="" /></li>
+				<li class="gallery-item"><img src="" /></li>
+				<li class="gallery-item"><img src="" /></li>
+				<li class="gallery-item"><img src="" /></li>
+				<li class="gallery-item"><img src="" /></li>
+				<li class="gallery-item"><img src="" /></li>
+				<li class="gallery-item"><img src="" /></li>
+				<li class="gallery-item"><img src="" /></li>
+			</ul>
+		</section>
+
+		<section class="main-container gallery hide" data-section="videos">
 			<h2><i class="icon-pictures">Galería de fotos</h2>
 			<ul class="pictures-gallery">
 				<li class="gallery-item"><img src="" /></li>
@@ -40,15 +59,14 @@
 			</ul>
 		</section>
 	</main>
-	<footer>
-		<dl>
+	<footer class="footer">
+		<dl class="social hide">
 			<dt>Encontranos en:</dt>
 			<dd><a href="">Facebook</a></dd>
 			<dd><a href="">Twitter</a></dd>
 			<dd><a href="">TripAdvisor</a></dd>
 			<dd><a href="">YouTube</a></dd>
 		</dl>
-
 		<p class="address">Baradero, Buenos Aires, Argentina</p>
 	</footer>
 </body>
