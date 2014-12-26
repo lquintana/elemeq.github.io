@@ -83,16 +83,30 @@
 	<script type="text/javascript">
 		(function (win, $){
 			'use strict';
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function(){
+			    if (this.readyState == 4 && this.status == 200){
+			        //this.response is what you're looking for
+			        handler(this.response);
+			        console.log(this.response, typeof this.response);
+			        var img = document.getElementById('img');
+			        var url = window.URL || window.webkitURL;
+			        img.src = url.createObjectURL(this.response);
+			    }
+			}
+			xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
+			xhr.responseType = 'blob';
+			xhr.send();      
 
-			$('[data-section="pictures"]').on('click','.item-gallery', function (event) {
-				$.ajax({
-					url:'assets/images/gallery/contact.jpg',
-					datatype:"image/jpg",
-					success: function(data){
-						console.log('data', data)
-					}
-				})
-			});
+			// $('[data-section="pictures"]').on('click','.item-gallery', function (event) {
+			// 	$.ajax({
+			// 		url:'assets/images/gallery/contact.jpg',
+			// 		datatype:"image/jpg",
+			// 		success: function(data){
+			// 			console.log('data', data)
+			// 		}
+			// 	})
+			// });
 
 		}(this, this.$));
 	</script>
