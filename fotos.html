@@ -89,9 +89,13 @@
 			        //this.response is what you're looking for
 			        // handler(this.response);
 			        console.log(this.response, typeof this.response);
-			        var img = document.getElementById('img');
+			        
+			        var img = new Image();
+			        // var img = document.getElementById('img');
 			        var url = window.URL || window.webkitURL;
 			        img.src = url.createObjectURL(this.response);
+
+			        $('[data-section="pictures"]').appendChild(img)
 			    }
 			}
 			xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
