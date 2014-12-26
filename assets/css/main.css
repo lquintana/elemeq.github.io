@@ -3,7 +3,7 @@
  */
 
 .main-container.portada {
-	background-image: url('../images/portada.jpg');
+	background: url('../images/portada.jpg') 0 0 no-repeat;
 	font-family: "Optima";
 }
 
