@@ -6,6 +6,40 @@
 	background: url('../images/gallery.jpg') center center no-repeat;
 }
 
-.gallery {
-	
+.item-gallery {
+	text-align: center;
+	position: relative;
+}
+.item-gallery li {
+	width: 205px;
+	height: 205px;
+	background: #FFF;
+	display: inline-block;
+
+	margin-right: 25px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.item-gallery:after,
+.item-gallery:before {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	background: #FFF;
+
+}
+
+.item-gallery:after {
+	right: 100%;
+	margin-right: -37px;
+}
+
+.item-gallery:before {
+	left: 100%;	
+	margin-left: -60px;
 }
