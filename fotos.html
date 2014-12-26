@@ -1,124 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Estancia Tierra Chaná</title>
+    <title>Estancia Tierra Chaná</title>
 
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" type="text/css" href="assets/fonts/icons/fontello.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/icons/fontello.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
 </head>
 <body>
-	<header class="header">
-		<a href="/" class="logo">
-			<img src="assets/images/logo.jpg" alt="Tierra Chaná" />
-			<h1>Tierra Chaná</h1>
-		</a>
-		<nav>
-			<ul>
-				<li><a href="/fotos.html"><i class="icon-picture"></i><span>Fotos y videos</span></a></li>
-				<li><a href="/location.html"><i class="icon-location"></i><span>Ubicación</span></a></li>
-				<li><a href="/contact.html"><i class="icon-mail"></i><span>Contacto</span></a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="main-container gallery">
-			<article class="gallery hide" data-section="construction">
-				
-				<h3>En construccion</h3>
+    <header class="header">
+        <a href="/" class="logo">
+            <img src="assets/images/logo.jpg" alt="Tierra Chaná" />
+            <h1>Tierra Chaná</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="/fotos.html"><i class="icon-picture"></i><span>Fotos y videos</span></a></li>
+                <li><a href="/location.html"><i class="icon-location"></i><span>Ubicación</span></a></li>
+                <li><a href="/contact.html"><i class="icon-mail"></i><span>Contacto</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-container gallery">
+            <article class="gallery hide" data-section="construction">
+                
+                <h3>En construccion</h3>
 
-			</article>
+            </article>
 
-			<aside class="aside-menu">
-				<ul>
-					<li data-selected="true"><a href="">Fotos</a></li>
-					<li><a href="">Videos</a></li>
-				</ul>
-			</aside>
-			<article class="gallery" data-section="pictures">
-				<h2><i class="icon-picture"></i> Galería de fotos</h2>
-				<ul class="item-gallery">
-					<li class="gallery-item"><img src="assets/images/gallery/contact.jpg" width="165" height="125" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-				</ul>
-			</article>
+            <aside class="aside-menu">
+                <ul>
+                    <li data-selected="true"><a href="">Fotos</a></li>
+                    <li><a href="">Videos</a></li>
+                </ul>
+            </aside>
+            <article class="gallery" data-section="pictures">
+                <h2><i class="icon-picture"></i> Galería de fotos</h2>
+                <ul class="item-gallery">
+                    <li class="gallery-item"><img src="assets/images/gallery/contact.jpg" width="165" height="125" data-toggle="modal" data-target="#myModal" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                </ul>
+            </article>
 
-			<article class="gallery hide" data-section="videos">
-				<h2><i class="icon-youtube-play"></i> Galería de videos</h2>
-				<ul class="item-gallery">
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-					<li class="gallery-item"><img src="" /></li>
-				</ul>
-			</article>
-		</section>
-	</main>
-	<footer class="footer">
-		<dl class="social hide">
-			<dt>Encontranos en:</dt>
-			<dd><a href="">Facebook</a></dd>
-			<dd><a href="">Twitter</a></dd>
-			<dd><a href="">TripAdvisor</a></dd>
-			<dd><a href="">YouTube</a></dd>
-		</dl>
-		<p class="address">Baradero, Buenos Aires, Argentina</p>
-	</footer>
+            <article class="gallery hide" data-section="videos">
+                <h2><i class="icon-youtube-play"></i> Galería de videos</h2>
+                <ul class="item-gallery">
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                    <li class="gallery-item"><img src="" /></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <dl class="social hide">
+            <dt>Encontranos en:</dt>
+            <dd><a href="">Facebook</a></dd>
+            <dd><a href="">Twitter</a></dd>
+            <dd><a href="">TripAdvisor</a></dd>
+            <dd><a href="">YouTube</a></dd>
+        </dl>
+        <p class="address">Baradero, Buenos Aires, Argentina</p>
+    </footer>
 
-	<script type="text/javascript" src="assets/javascript/vendor/jquery-1.11.2.min.js">
+    <script type="text/javascript" src="assets/javascript/vendor/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-	</script>
+    <script type="text/javascript">
+        (function (win, $){
+            'use strict';
 
-	<script type="text/javascript">
-		(function (win, $){
-			'use strict';
+            $('[data-section="pictures"]').on('click','.item-gallery', function (event) {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function(){
+                    if (this.readyState == 4 && this.status == 200){
+                        //this.response is what you're looking for
+                        // handler(this.response);
+                        console.log(this.response, typeof this.response);
+                        
+                        var img = new Image();
+                        console.log('img', img)
+                        // var img = document.getElementById('img');
+                        var url = window.URL || window.webkitURL;
+                        img.src = url.createObjectURL(this.response);
 
-			$('[data-section="pictures"]').on('click','.item-gallery', function (event) {
-				var xhr = new XMLHttpRequest();
-				xhr.onreadystatechange = function(){
-				    if (this.readyState == 4 && this.status == 200){
-				        //this.response is what you're looking for
-				        // handler(this.response);
-				        console.log(this.response, typeof this.response);
-				        
-				        var img = new Image();
-				        console.log('img', img)
-				        // var img = document.getElementById('img');
-				        var url = window.URL || window.webkitURL;
-				        img.src = url.createObjectURL(this.response);
+                        $('#myModal .modal-content').append(img);
+                    }
+                }
+                xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
+                xhr.responseType = 'blob';
+                xhr.send();      
+            });
 
-				        document.querySelector('body').appendChild(img);
-				    }
-				}
-				xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
-				xhr.responseType = 'blob';
-				xhr.send();      
-			});
+            $('#myModal').on('shown.bs.modal', function (e) {
 
-		}(this, this.$));
-	</script>
+            });
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-58022065-1', 'auto');
-	  ga('send', 'pageview');
+        }(this, this.$));
+    </script>
 
-	</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58022065-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+                <i class="close icon-cancel-circled" data-dismiss="modal" aria-label="Close"></i>
+
+            <div class="modal-body">
+            </div>
+        </div>
+      </div>
+    </div>
 
 
 </body>
