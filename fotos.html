@@ -98,10 +98,8 @@
                         // var img = document.getElementById('img');
                         var url = window.URL || window.webkitURL;
                         img.src = url.createObjectURL(this.response);
-                        img.width = '100%';
-                        img.height = '100%';
 
-                        $('#myModal .modal-content').append(img);
+                        $('#myModal .modal-body').append(img);
                     }
                 }
                 xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
