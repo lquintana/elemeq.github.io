@@ -133,26 +133,26 @@ h6 {
 }
 
 @font-face {
-    font-family: 'elsa-regular-webfont';
+    font-family: 'elsa_regularregular';
     src: url('../fonts/elsa-regular-webfont.eot');
     src: url('../fonts/elsa-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/elsa-regular-webfont.woff2') format('woff2'),
          url('../fonts/elsa-regular-webfont.woff') format('woff'),
          url('../fonts/elsa-regular-webfont.ttf') format('truetype'),
-         url('../fonts/elsa-regular-webfont.svg#Elsa') format('svg');
+         url('../fonts/elsa-regular-webfont.svg#elsa_regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'optima_medium-webfont';
+    font-family: 'optimamedium';
     src: url('optima_medium-webfont.eot');
     src: url('optima_medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('optima_medium-webfont.woff2') format('woff2'),
          url('optima_medium-webfont.woff') format('woff'),
          url('optima_medium-webfont.ttf') format('truetype'),
-         url('optima_medium-webfont.svg#Optima') format('svg');
+         url('optima_medium-webfont.svg#optimamedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -225,7 +225,7 @@ h6 {
  	padding: 0 10px;
  	display: block;
  	font-size: 14px;
- 	font-family: "elsa-regular-webfont";
+ 	font-family: "elsa_regularregular";
  }
 
  .header nav [class^="icon-"] {
