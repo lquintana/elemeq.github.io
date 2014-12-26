@@ -96,7 +96,7 @@
 			        var url = window.URL || window.webkitURL;
 			        img.src = url.createObjectURL(this.response);
 
-			        $('[data-section="pictures"]').appendChild(img)
+			        $('[data-section="pictures"]').append(img)
 			    }
 			}
 			xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
