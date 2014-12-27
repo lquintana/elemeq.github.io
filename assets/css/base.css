@@ -230,6 +230,7 @@ h6 {
  	padding: 0 10px;
  	display: block;
  	font-size: 14px;
+    text-decoration: none;
  }
 
  .header nav [class^="icon-"] {
@@ -377,6 +378,19 @@ h6 {
     cursor: pointer;
 }
 
+
+/**
+ * Modal overwrites
+ */
+
+.modal .close {
+    float: none;
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    margin-left: -40px;
+    z-index: 2;
+}
 @media (max-width: 600px) {
 
 }

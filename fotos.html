@@ -42,7 +42,7 @@
             <article class="gallery" data-section="pictures">
                 <h2><i class="icon-picture"></i> Galería de fotos</h2>
                 <ul class="item-gallery">
-                    <li class="gallery-item"><img src="assets/images/gallery/contact.jpg" width="165" height="125" data-toggle="modal" data-target="#myModal" /></li>
+                    <li class="gallery-item"><img src="assets/images/gallery/contact.jpg" width="165" height="125" /></li>
                     <li class="gallery-item"><img src="" /></li>
                     <li class="gallery-item"><img src="" /></li>
                     <li class="gallery-item"><img src="" /></li>
@@ -87,28 +87,39 @@
             'use strict';
 
             $('[data-section="pictures"]').on('click','.item-gallery', function (event) {
-                var xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = function(){
-                    if (this.readyState == 4 && this.status == 200){
-                        //this.response is what you're looking for
-                        // handler(this.response);
-                        console.log(this.response, typeof this.response);
+                // var xhr = new XMLHttpRequest();
+                // xhr.onreadystatechange = function(){
+                //     if (this.readyState == 4 && this.status == 200){
+                //         //this.response is what you're looking for
+                //         // handler(this.response);
+                //         console.log(this.response, typeof this.response);
                         
-                        var img = new Image();
-                        // var img = document.getElementById('img');
-                        var url = window.URL || window.webkitURL;
-                        img.src = url.createObjectURL(this.response);
+                //         // var img = new Image();
+                //         // // var img = document.getElementById('img');
+                //         // var url = window.URL || window.webkitURL;
+                //         // img.src = url.createObjectURL(this.response);
 
-                        $('#myModal .modal-body').append(img);
-                    }
-                }
-                xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
-                xhr.responseType = 'blob';
-                xhr.send();      
+
+
+                //     }
+                // }
+                // xhr.open('GET', 'http://elemeq.github.io/assets/images/gallery/contact.jpg');
+                // xhr.responseType = 'blob';
+                // xhr.send();      
+
+                var img = '<div id="myImg" style="width: 800px; height: 600px; background: red;"></div>';
+
+                $('#myModal').modal('show');
             });
 
             $('#myModal').on('shown.bs.modal', function (e) {
+                console.log('shown');
+                $('#myModal').find('.modal-body').append(img);
+            });
 
+            $('#myModal').on('hidden.bs.modal', function (e) {
+                console.log('hide', $(this).find('#myImg'));
+                $(this).find('#myImg').remove();
             });
 
 
